@@ -1,0 +1,224 @@
+  :root{
+   --Blue100: hsl(225, 100%, 94%);
+   --Blue700: hsl(245, 75%, 52%);
+   --Blue50: hsl(225, 100%, 98%);
+   --Gray600: hsl(224, 23%, 55%);
+   --Blue950: hsl(223, 47%, 23%);
+  }
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    background-color: var(--Blue100);
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+  }
+  .container{
+    background-color: var(--Blue50);
+    color:var(--Blue950);
+  }
+  
+  /*Mobile Design First*/
+
+  @media screen and (max-width:768px){
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width:25rem;
+        height:70%;
+        margin:5rem 4rem;
+        border-radius: 1.5rem;
+    }
+    .illustration-hero-img{
+      border-top-left-radius: 1.5rem;
+      border-top-right-radius: 1.5rem;
+    }
+    .content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction:column;
+      gap:0.5rem;
+      text-align: center;
+      padding:0 2rem;
+    }
+    h1{
+      font-weight: 800;
+      font-size:25px;
+    }
+    .summary{
+      line-height: 1.7rem;
+    }
+    .annualplan{
+      display:inline-flex;
+      justify-content: center;
+      align-items: center;
+      width:20rem;
+      gap:1.5rem;
+      background-color:  hsl(216, 13%, 92%);
+      border-radius: 1rem;
+      height:4rem;
+    }
+    .annualplan2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      line-height: 0.2rem;
+      margin-top: 1rem;
+    }
+    .icon-music{
+      height:3.5rem;
+      width:3.5rem;
+    }
+    h2{
+      font-size: 17px;
+      font-weight: 600;
+      margin:0 0 0 0;
+    }
+    button{
+      font-size: 17px;
+    }
+
+    .buttons{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap:1rem;
+  
+    }
+    .first-button{
+    height:3rem;
+    width:20rem;
+    border:none;
+    border-radius: 0.5rem;
+    padding:0.3rem;
+    color:white;
+    background-color: var(--Blue700);
+  }
+  .second-button{
+    width:20rem;
+    height:3rem;
+    border:none;
+    background-color: none;
+    color:var(--Gray600);
+  }
+  a:hover{
+    text-decoration: none;
+    color:var(--Blue950);
+  }
+  .first-button:hover{
+    background-color: var(--Gray600);
+  }
+  .second-button:hover{
+    color:var(--Blue950);
+  }
+  }
+   @media screen and (min-width:768px){
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width:28rem;
+        height:70%;
+        margin:3rem 28rem;
+        border-radius: 1.5rem;
+    }
+    .illustration-hero-img{
+      border-top-left-radius: 1.5rem;
+      border-top-right-radius: 1.5rem;
+    }
+    .content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction:column;
+      gap:0.3rem;
+      text-align: center;
+      padding:0.5rem;
+    }
+    h1{
+      font-weight: 800;
+      font-size:25px;
+    }
+    .summary{
+      line-height: 1.7rem;
+      width:18rem;
+    }
+    .annualplan{
+      display:inline-flex;
+      justify-content: center;
+      align-items: center;
+      width:20rem;
+      gap:1.5rem;
+      background-color:  hsl(216, 13%, 92%);
+      border-radius: 1rem;
+      height:4rem;
+    }
+    .annualplan2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      line-height: 0.2rem;
+      margin-top: 1rem;
+    }
+    .icon-music{
+      height:3.5rem;
+      width:3.5rem;
+    }
+    h2{
+      font-size: 17px;
+      font-weight: 600;
+      margin:0 0 0 0;
+    }
+    button{
+      font-size: 17px;
+    }
+
+    .buttons{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap:1rem;
+  
+    }
+    .first-button{
+    height:3rem;
+    width:20rem;
+    border:none;
+    border-radius: 0.5rem;
+    padding:0.3rem;
+    color:white;
+    background-color: var(--Blue700);
+  }
+  .second-button{
+    width:20rem;
+    height:3rem;
+    border:none;
+    background-color: none;
+    color:var(--Gray600);
+  }
+  a:hover{
+    text-decoration: none;
+    color:var(--Blue950);
+  }
+  .first-button:hover{
+    background-color: var(--Gray600);
+  }
+  .second-button:hover{
+    color:var(--Blue950);
+  }
+}
+
+
+    .attribution {
+         font-size: 0.6875rem; 
+         text-align: center;
+         }
+    .attribution a {
+         color: hsl(228, 45%, 44%);
+         }
